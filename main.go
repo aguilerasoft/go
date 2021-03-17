@@ -2,14 +2,15 @@ package main
 
 import "fmt"
 
-
 func main() {
+    var horasTrabajadas int
+    var costoHora float32
+    var sueldo float32
 
-	slice := make([]int,3,10)
-	slice = append(slice, 2)	
-
-	fmt.Println(slice)
-	fmt.Println(len(slice))
-	fmt.Println(cap(slice))
-	
+    fmt.Print("Ingrese las horas trabajadas por el empleado:")
+    fmt.Scan(&horasTrabajadas)
+    fmt.Print("Ingrese el pago por hora:")
+    fmt.Scan(&costoHora)
+    sueldo=float32(horasTrabajadas) * costoHora
+    fmt.Print("El sueldo total del operario es ",sueldo)
 }
